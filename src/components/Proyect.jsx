@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import projectsArray from './arrayProject.js'
 import { IntlProvider, FormattedMessage, FormattedNumber } from 'react-intl'
+import images from '../img/images.js'
 
 
 const Proyect = () => {
@@ -52,28 +53,24 @@ const Proyect = () => {
         capture.classList.toggle('back-video-active')
         console.log(capture);
     }
+
     const projectsLists = projectCarrousel.map(projCarrusel => {
         return (
-            <div key={projCarrusel.name} className='contCarrouselData'>
-
-                <h4 className='subtitle-secund'>
-                    <FormattedMessage id={projCarrusel.name} defaultMessage='loading' />
-                </h4>
-
-
+            <div key={projCarrusel.name} >
                 <div className='cont-video-data'>
                     <div className='front-video' onMouseOver={moveMouseVideoHover}>
                         <video className='projectVideoCarrousel' src={`${projCarrusel.video}`} muted loop autoPlay poster={projCarrusel.img}></video>
+                        <img src={images.click} alt=""  className='video-handClic bx-burst'/>
                     </div>
                     <div className='back-video' id='back-video-Data'>
+                        <div onClick={moveMouseVideoHover} className="back-video-exitData">
+                            <i className='bx bx-x-circle'></i>
+                        </div>
                         <h2 className='subtitle-secund titleProBack'>
-
                             <FormattedMessage id={projCarrusel.name} defaultMessage='loading' />
                         </h2>
                         <p className='paragraph'>
-                            {/* <FormattedMessage id={projCarrusel.description} defaultMessage='loading' /> */}
                             <FormattedMessage id={projCarrusel.description} defaultMessage='loading' />
-
                         </p>
                         <h2 className='subtitle-secund titleProBack'>
                             <FormattedMessage id='id-project-tecnoUsed' defaultMessage='loading' />
@@ -95,7 +92,7 @@ const Proyect = () => {
                         </h4>
                         <div className='contProjectLinks'>
                             <a className='ProjectLinks' href=""><i className='bx bxl-github bx-lg'></i></a>
-                            <a className='ProjectLinks' href=""><i class='bx bx-world bx-lg'></i></a>
+                            <a className='ProjectLinks' href=""><i className='bx bx-world bx-lg'></i></a>
                         </div>
                     </div>
                 </div>
@@ -140,18 +137,22 @@ const Proyect = () => {
                         <div className='subtitle-secund titleProBack'>
                             <FormattedMessage id='id-project-descrip' defaultMessage='loading' />
                         </div>
-                        {
-                            projectsLists
-                        }
+
+                        <div className='contCarrouselData'>
+                            {
+                                projectsLists
+                            }
+
+                        </div>
                         <div className='carrousel-projectItem'>
 
                             {
                                 allCarrouselProject
                             }
 
+                            <button onClick={previousPage} id='btnCarrNextPrev' className='carrousel-btPrev'><i className='bx bxs-left-arrow'></i></button>
+                            <button onClick={nextPag} id='btnCarrNextPrev' className='carrousel-btNext'><i className='bx bxs-right-arrow'></i></button>
                         </div>
-                        <button onClick={previousPage} id='btnCarrNextPrev' className='carrousel-btPrev'><i className='bx bxs-left-arrow'></i></button>
-                        <button onClick={nextPag} id='btnCarrNextPrev' className='carrousel-btNext'><i className='bx bxs-right-arrow'></i></button>
 
                     </Col>
 

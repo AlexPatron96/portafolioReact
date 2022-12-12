@@ -9,11 +9,11 @@
 
 .about-contEduExp:hover {
     border-radius: 7px;
-    animation: border 2s infinite ease;
+    animation: borderBajo 2s infinite ease;
 
 }
 
-@keyframes border {
+@keyframes borderBAjo {
     0% {
         border-bottom: 5px solid #4dcdcbc0;
         transition: 1s ease;

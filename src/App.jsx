@@ -41,8 +41,9 @@ function App() {
         particlesJS(render === "dark" ? particles2 : particles1)
     }, [render])
 
-    console.log(localStorage.getItem("theme"));
+    // console.log(localStorage.getItem("theme"));
     const btnSwitch2 = document.querySelector('#switch')
+
     const setLanguage = (lenguage) => {
         // alert('lenguaje seleccionado ' + lenguage)
         if (lenguage === "es-ES") {
@@ -73,8 +74,19 @@ function App() {
 
 
     const activeGears = () => {
+        const switchTheme = document.querySelector('#switch')
         const lenguageActive = document.querySelector('#lenguage')
-        lenguageActive.classList.toggle('activeGears')
+        if (lenguageActive.classList[1] === "activeGears") {
+
+            lenguageActive.classList.remove('activeGears')
+            switchTheme.classList.remove('switchTheme-active')
+
+        } else {
+            lenguageActive.classList.add('activeGears')
+            switchTheme.classList.add('switchTheme-active')
+        }
+        console.log(lenguageActive.classList);
+        console.log(switchTheme);
     }
 
 

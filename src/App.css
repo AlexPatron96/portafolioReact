@@ -13,8 +13,8 @@
 :root {
     /*========== Colors ==========*/
     --body-color: radial-gradient(#f3f5f5, aliceblue);
-    --body-color2:radial-gradient(#1d1f20, #000);
-    
+    --body-color2: radial-gradient(#1d1f20, #000);
+
     --nav-color: #4DCCCA;
     --first-color: #4DCCCA;
     --secund-color: #6246EF;
@@ -62,8 +62,8 @@ body {
 
 body.theme__dark {
     --body-color2: radial-gradient(#f3f5f5, aliceblue);
-    --body-color:radial-gradient(#1d1f20, #000);
-    
+    --body-color: radial-gradient(#1d1f20, #000);
+
     --nav-color: radial-gradient(#1d1f20, #000);
     --first-color: #6246EF;
     --secund-color: #4DCCCA;
@@ -94,7 +94,7 @@ html,
 body {
     max-width: 100% !important;
     overflow-x: hidden !important;
-    
+
 }
 
 #body-person {
@@ -104,23 +104,25 @@ body {
 
 /**/
 .lenguage {
-    display: none;
-}
 
-.activeGears {
+z-index: 1000;
     background: #212529;
     border-radius: 50px;
     position: fixed;
     cursor: pointer;
     display: flex;
     top: 83%;
-    left: 58%;
+    left: -36%;
     border: 4px solid var(--first-color);
     transition: 1s ease;
     width: 125px;
     height: 40px;
     flex-direction: row-reverse;
     justify-content: space-evenly;
+}
+
+.activeGears {
+    left: 8%;
 }
 
 .btnGears {
@@ -153,6 +155,11 @@ body {
     height: 25px;
 }
 
+.switchTheme-active {
+    left: 8% !important;
+    /* transition: left 1s ease !important; */
+}
+
 .switch {
     background: #212529;
     border-radius: 50px;
@@ -161,10 +168,11 @@ body {
     cursor: pointer;
     display: flex;
     outline: none;
-    top: 90%;
-    left: 58%;
+    top: 90%;    /* modificar ubicacion a medida crece*/
+    left: -22%;    /* modificar ubicacion a medida crece*/
     border: 4px solid var(--first-color);
-    transition: 1s ease;
+    transition: left 1s ease;
+    z-index: 1000;
 }
 
 .switch>span {
@@ -190,8 +198,9 @@ body {
     transition: 1s ease;
 }
 
-.switch.activeDark {
-    background: #4DCCCA;
+.bxs-sun {
+    background: #212529;
+    color: orange;
 }
 
 .switch.activeDark::after {
@@ -270,32 +279,42 @@ body {
     border-radius: 2%;
 }
 
+
+.cont-row-col{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
 .form-group {
     position: relative;
-    margin: 1rem 1rem;
+    margin: 0.5rem 0.5rem;
 }
 
 .form-input {
     width: 100%;
     color: var(--text-color);
-    font-size: 1rem;
-    padding: 0.6em 0.3em;
+    font-size: 18px;
+    padding: 0.6rem 0.8rem;
     border: none;
     outline: none;
     border: 2px solid var(--first-color);
     border-radius: 15px;
 
 }
-.form-input:focus{
+
+.form-input:focus {
     border: 2px solid var(--secund-color);
 }
-.form-input:focus + .form-label {
+
+.form-input:focus+.form-label {
     color: var(--secund-color) !important;
 }
+
 .form-input:focus+.form-label,
 .form-input:not(:placeholder-shown)+.form-label {
-    transform: translateY(-32px) scale(0.6);
-    /* transform-origin: left top; */
+    transform: translateY(-25px) scale(0.6);
+    transform-origin: left top;
     color: var(--first-color);
     background: var(--body-color);
 
@@ -346,10 +365,10 @@ body {
 
 
 
-    .switch {
+    /* .switch {
         top: 90%;
         left: 90%;
-    }
+    } */
 
     .carrousel-btPrev {
         position: absolute;

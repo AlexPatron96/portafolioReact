@@ -7,12 +7,12 @@ import axios from 'axios';
 const ContactMe = () => {
 
     const { register, handleSubmit, reset } = useForm();
-    const [ response , setResponse ] = useState([])
-    
+    const [response, setResponse] = useState([])
+
     const submit = data => {
-        axios.post("https://formspree.io/f/xqkjrjpj",data)
-        .then(res => setResponse(res.data))
-        .catch(err => console.log(err.response))
+        axios.post("https://formspree.io/f/xqkjrjpj", data)
+            .then(res => setResponse(res.data))
+            .catch(err => console.log(err.response))
         console.log(data)
     }
     return (
@@ -26,9 +26,13 @@ const ContactMe = () => {
                 </span>
             </h2>
 
-            <form onSubmit={handleSubmit(submit)}>
-                <Container >
+            <div className='contac-myInfo'>
 
+            </div>
+
+
+            <form onSubmit={handleSubmit(submit)} className='cont-row-col'>
+                <Container>
                     <Row>
                         <Col sm={6}>
                             <div className='form-group'>
@@ -53,7 +57,7 @@ const ContactMe = () => {
                         </Col>
                         <Col sm={12}>
                             <div className='form-group'>
-                                <input type='text' id='message-input' c {...register("message")} placeholder="  " className='form-input' required=" " />
+                                <input type='text' id='message-input' {...register("message")} placeholder="  " className='form-input' required=" " />
                                 <label htmlFor='message-input' className='form-label'>Message:</label>
                                 <span className='form-line'></span>
                             </div>

@@ -6,6 +6,12 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Typed from 'typed.js';
 import { IntlProvider, FormattedMessage, FormattedNumber } from 'react-intl'
+import cv from '../document/CV-ALEX-PATRON.pdf'
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
+import cvImg from '../../../cv.png'
+import gitImg from '../../../git.png'
+import lin from '../../../linkedin.png'
 
 const Presentation = ({ render, locale }) => {
 
@@ -41,7 +47,12 @@ const Presentation = ({ render, locale }) => {
         }
     }, [locale])
 
-
+    const activeBtnDownLoad = () => {
+        const selectBtnDownLoad = document.getElementById('id-btncv')
+        console.log(selectBtnDownLoad);
+        selectBtnDownLoad.classList.toggle('activeMove')
+        // alert('mouse move or click')
+    }
     return (
         <div className='contComp marg'  >
 
@@ -56,13 +67,40 @@ const Presentation = ({ render, locale }) => {
                                 <FormattedMessage id='id-Presentation-name' defaultMessage='Alex' />
                             </span>
                         </h1>
-                        <p className='paragraph'>
+                        <p className='paragraph margParr'>
                             <FormattedMessage id='id-Presentation-textPre' defaultMessage='Text Description' />
                         </p>
+                        <div className='cont-btnLinkInf'>
+                            {/* <a href="">
+                                <i class='bx bxl-github bx-lg' ></i>
+                            </a>
+
+                            <a href=""  >
+                                <i class='bx bxl-linkedin bx-lg'></i>
+                            </a> */}
+
+                            <a id='id-btncv' className='btn-downloadCv' href={cv} download="CV-ALEX-PATRON.pdf">
+                                <img  className='imgbtnLink' src={lin} alt="" />
+                            </a>
+
+                            <a id='id-btncv' className='btn-downloadCv' href={cv} download="CV-ALEX-PATRON.pdf">
+                                <img className='imgbtnLink'  src={cvImg} alt="" />
+                            </a>
+
+                            <a id='id-btncv' className='btn-downloadCv' href={cv} download="CV-ALEX-PATRON.pdf">
+                                <img  className='imgbtnLink' src={gitImg} alt="" />
+                            </a>
+
+                            {/* <a id='id-btncv' className='btn-downloadCv' href={cv} download="CV-ALEX-PATRON.pdf">
+                                <i class='bx bx-spreadsheet bx-lg'></i>
+                            </a> */}
+
+
+                        </div>
                     </Col>
                     <Col sm={5}>
                         <div className='cont-img-present'>
-                            <Image src={render === 'dark' ? images['myAvatar-dark'] : images.myAvatar} className="img-present"></Image>
+                            <Image src={render === 'dark' ? images['myAvatar-dark'] : images.myAvatar} className="img-present" onClick={activeBtnDownLoad}></Image>
                             <div className="type-wrap">
                                 <span style={{ whiteSpace: 'pre' }} ref={el} className="textSpan">
 

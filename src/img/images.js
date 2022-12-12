@@ -22,7 +22,7 @@ import imgP5 from '../img/P5.png'
 import imgP6 from '../img/P6.png'
 import spain from '../img/spain.png'
 import usa from '../img/usa.png'
-
+import click from '../img/grifo.png'
 export default {
     'redux':redux,
     'react':react,
@@ -47,5 +47,6 @@ export default {
     'imgP5':imgP5,
     'imgP6':imgP6,
     'spain':spain,
-    'usa':usa
+    'usa':usa,
+    'click':click
 }

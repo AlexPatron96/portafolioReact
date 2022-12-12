@@ -97,11 +97,13 @@
 .carrousel-btNext {
     position: absolute;
     top: 50%;
-    left: 85%;
+    left: 84%;
 }
-.cont-video-data{
+
+.cont-video-data {
     position: relative;
 }
+
 .back-video {
     top: 10%;
     left: 0%;
@@ -110,7 +112,7 @@
     padding: 0.5rem;
     position: absolute;
     border-radius: 40px;
-    background:var(--body-color) ;
+    background: var(--body-color);
     overflow: scroll;
     overflow-x: hidden;
     /* margin: 1rem; */
@@ -119,13 +121,19 @@
     border-bottom: 2px solid var(--first-color);
 }
 
+.back-video-exitData {
+    position: absolute;
+    left: 50%;
+    top: 1%;
+}
+
 .back-video-active {
     display: block;
 }
 
 .titleProBack {
     text-align: center !important;
-    margin: 0.5rem 0;
+    margin: 0.75rem 0;
 }
 
 .contUsedTechnologyProject {
@@ -196,4 +204,12 @@
     border-bottom: 2px solid var(--first-color);
     border-right: 2px solid var(--first-color);
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.video-handClic{
+    position: absolute;
+    top: 75%;
+    left: 80%;
+    width: 40px;
+    transform: translate(-50%,-50%);
 }
