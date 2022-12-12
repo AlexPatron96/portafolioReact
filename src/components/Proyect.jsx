@@ -60,40 +60,43 @@ const Proyect = () => {
                     <FormattedMessage id={projCarrusel.name} defaultMessage='loading' />
                 </h4>
 
-                <div className='front-video' onMouseOver={moveMouseVideoHover}>
-                    <video className='projectVideoCarrousel' src={`${projCarrusel.video}`} muted loop autoPlay poster={projCarrusel.img}></video>
-                </div>
-                <div className='back-video' id='back-video-Data'>
-                    <h2 className='subtitle-secund titleProBack'>
 
-                        <FormattedMessage id={projCarrusel.name} defaultMessage='loading' />
-                    </h2>
-                    <p className='paragraph'>
-                        {/* <FormattedMessage id={projCarrusel.description} defaultMessage='loading' /> */}
-                        <FormattedMessage id={projCarrusel.description} defaultMessage='loading' />
-
-                    </p>
-                    <h2 className='subtitle-secund titleProBack'>
-                        <FormattedMessage id='id-project-tecnoUsed' defaultMessage='loading' />
-                    </h2>
-                    <div className='contUsedTechnologyProject'>
-                        {
-                            projCarrusel.Tecnologias.map(tec => {
-                                return (
-                                    <div key={tec.name} className="contImgTitleUsedTec">
-                                        <h4 className='subtitle-secund textTecUsed'>{tec.name}</h4>
-                                        <img className='imgTecUsed' src={tec.img} alt="" />
-                                    </div>
-                                )
-                            })
-                        }
+                <div className='cont-video-data'>
+                    <div className='front-video' onMouseOver={moveMouseVideoHover}>
+                        <video className='projectVideoCarrousel' src={`${projCarrusel.video}`} muted loop autoPlay poster={projCarrusel.img}></video>
                     </div>
-                    <h4 className='subtitle-secund titleProBack'>
-                        <FormattedMessage id='id-project-proLink' defaultMessage='loading' />
-                    </h4>
-                    <div className='contProjectLinks'>
-                        <a className='ProjectLinks' href=""><i className='bx bxl-github bx-lg'></i></a>
-                        <a className='ProjectLinks' href=""><i class='bx bx-world bx-lg'></i></a>
+                    <div className='back-video' id='back-video-Data'>
+                        <h2 className='subtitle-secund titleProBack'>
+
+                            <FormattedMessage id={projCarrusel.name} defaultMessage='loading' />
+                        </h2>
+                        <p className='paragraph'>
+                            {/* <FormattedMessage id={projCarrusel.description} defaultMessage='loading' /> */}
+                            <FormattedMessage id={projCarrusel.description} defaultMessage='loading' />
+
+                        </p>
+                        <h2 className='subtitle-secund titleProBack'>
+                            <FormattedMessage id='id-project-tecnoUsed' defaultMessage='loading' />
+                        </h2>
+                        <div className='contUsedTechnologyProject'>
+                            {
+                                projCarrusel.Tecnologias.map(tec => {
+                                    return (
+                                        <div key={tec.name} className="contImgTitleUsedTec">
+                                            <h4 className='subtitle-secund textTecUsed'>{tec.name}</h4>
+                                            <img className='imgTecUsed' src={tec.img} alt="" />
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                        <h4 className='subtitle-secund titleProBack'>
+                            <FormattedMessage id='id-project-proLink' defaultMessage='loading' />
+                        </h4>
+                        <div className='contProjectLinks'>
+                            <a className='ProjectLinks' href=""><i className='bx bxl-github bx-lg'></i></a>
+                            <a className='ProjectLinks' href=""><i class='bx bx-world bx-lg'></i></a>
+                        </div>
                     </div>
                 </div>
             </div>

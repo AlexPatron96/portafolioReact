@@ -337,9 +337,9 @@ body {
         transition: 1s ease;
     }
 
-    .back-video::-webkit-scrollbar {
+    /* .back-video::-webkit-scrollbar {
         display: none;
-    }
+    } */
 }
 
 @media screen and (min-width: 720px) {
@@ -372,10 +372,10 @@ body {
         height: 500px;
     }
 
-    .back-video {
+    /* .back-video {
         top: 65px;
         left: 10%;
-    }
+    } */
 }
 
 @media screen and (min-width: 980px) {
@@ -384,22 +384,22 @@ body {
         align-items: center;
     }
 
-    .back-video {
+    /* .back-video {
         top: 65px;
         left: 20%;
-    }
+    } */
 }
 
 @media screen and (min-width: 1200px) {
-    .back-video {
+    /* .back-video {
         top: 65px;
         left: 24.5%;
-    }
+    } */
 }
 
 @media screen and (min-width: 1400px) {
-    .back-video {
+    /* .back-video {
         top: 65px;
         left: 27.5%;
-    }
+    } */
 }
