@@ -68,16 +68,16 @@ body.theme__dark {
     --first-color: #6246EF;
     --secund-color: #4DCCCA;
 
-    --button-color: #6057EB;
-    --button-color-border: #5D68E6;
+    --button-color: #6246EF;
+    --button-color-border: #6246EF;
     --hover: radial-gradient(#1d1f20, #000);
 
     --text-color-hoverINV: #1c1c1d;
     --text-color-hover: #f0f8ff;
     --title-color-h1: #D3D6DC;
     --title-color: #CACDD5;
-    --title-secund-color: #6057EB;
-    --subtitle-color: #6851DC;
+    --title-secund-color: #6246EF;
+    --subtitle-color: #826FE2;
     --paragraph-color: #999EAD;
     --text-color: #D3D6DC;
 
@@ -94,12 +94,12 @@ html,
 body {
     max-width: 100% !important;
     overflow-x: hidden !important;
-
+    
 }
 
 #body-person {
     background: var(--body-color);
-
+    transition: color 1s ease !important;
 }
 
 /**/

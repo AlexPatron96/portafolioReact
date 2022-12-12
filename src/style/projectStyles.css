@@ -101,10 +101,10 @@
 }
 
 .back-video {
-    top: 90px;
+    top: 150px;
     left: 0;
     max-width: 550px;
-    height: 325px;
+    height: 225px;
     padding: 1rem;
     position: absolute;
     border-radius: 40px;
@@ -113,6 +113,8 @@
     overflow-x: hidden;
     margin: 1rem;
     display: none;
+    border-top: 2px solid var(--first-color);
+    border-bottom: 2px solid var(--first-color);
 }
 
 .back-video-active {
