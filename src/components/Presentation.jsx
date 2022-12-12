@@ -62,7 +62,7 @@ const Presentation = ({ render, locale }) => {
                     </Col>
                     <Col sm={5}>
                         <div className='cont-img-present'>
-                            <Image src={render ? images['myAvatar-dark'] : images.myAvatar} className="img-present"></Image>
+                            <Image src={render === 'dark' ? images['myAvatar-dark'] : images.myAvatar} className="img-present"></Image>
                             <div className="type-wrap">
                                 <span style={{ whiteSpace: 'pre' }} ref={el} className="textSpan">
 
