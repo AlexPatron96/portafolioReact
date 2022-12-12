@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import projectsArray from './arrayProject.js'
-import images from '../img/images';
-import videos from '../video/videos.js';
+import { IntlProvider, FormattedMessage, FormattedNumber } from 'react-intl'
+
+
 const Proyect = () => {
     const [projectCarrousel, setProjectCarrousel] = useState([...projectsArray].splice(0, 1))
     const [currentPage, setCurrentPage] = useState(1)
@@ -56,15 +56,26 @@ const Proyect = () => {
         return (
             <div key={projCarrusel.name} className='contCarrouselData'>
 
-                {/* <h4 className='subtitle-secund'>{(projCarrusel.name).toUpperCase()}</h4> */}
+                <h4 className='subtitle-secund'>
+                    <FormattedMessage id={projCarrusel.name} defaultMessage='loading' />
+                </h4>
 
                 <div className='front-video' onMouseOver={moveMouseVideoHover}>
-                    <video className='projectVideoCarrousel' src={`${projCarrusel.video}`} muted loop autoPlay></video>
+                    <video className='projectVideoCarrousel' src={`${projCarrusel.video}`} muted loop autoPlay poster={projCarrusel.img}></video>
                 </div>
                 <div className='back-video' id='back-video-Data'>
-                    <h2 className='subtitle-secund titleProBack'>{projCarrusel.name}</h2>
-                    <p className='paragraph'>{projCarrusel.description}</p>
-                    <h2 className='subtitle-secund titleProBack'>Used Technology</h2>
+                    <h2 className='subtitle-secund titleProBack'>
+
+                        <FormattedMessage id={projCarrusel.name} defaultMessage='loading' />
+                    </h2>
+                    <p className='paragraph'>
+                        {/* <FormattedMessage id={projCarrusel.description} defaultMessage='loading' /> */}
+                        <FormattedMessage id={projCarrusel.description} defaultMessage='loading' />
+
+                    </p>
+                    <h2 className='subtitle-secund titleProBack'>
+                        <FormattedMessage id='id-project-tecnoUsed' defaultMessage='loading' />
+                    </h2>
                     <div className='contUsedTechnologyProject'>
                         {
                             projCarrusel.Tecnologias.map(tec => {
@@ -77,10 +88,12 @@ const Proyect = () => {
                             })
                         }
                     </div>
-                    <h4 className='subtitle-secund titleProBack'>Project Links</h4>
+                    <h4 className='subtitle-secund titleProBack'>
+                        <FormattedMessage id='id-project-proLink' defaultMessage='loading' />
+                    </h4>
                     <div className='contProjectLinks'>
                         <a className='ProjectLinks' href=""><i className='bx bxl-github bx-lg'></i></a>
-                        <a className='ProjectLinks' href=""><i className='bx bxl-linkedin bx-lg'></i></a>
+                        <a className='ProjectLinks' href=""><i class='bx bx-world bx-lg'></i></a>
                     </div>
                 </div>
             </div>
@@ -98,12 +111,6 @@ const Proyect = () => {
         return (
             <button id={page} key={page} onClick={handlePageClick}
                 className={`btn-carrousel ${currentPage === page ? 'activeItem' : null}`}>
-                {
-                    // projectsArray.filter( proId => Number(proId.id) === page) 
-                    // ? <img id={page} className='itemImgCarrousel' src={(projectsArray.filter( proId => Number(proId.id) === page)).indexOf('img')} alt="" />
-                    // : <h1>1</h1>
-                    console.log((projectsArray.filter(proId => Number(proId.id) === page))[0].img)
-                }
                 <img id={page} className='itemImgCarrousel' src={(projectsArray.filter(proId => Number(proId.id) === page))[0].img} alt="" />
             </button>
         )
@@ -118,12 +125,17 @@ const Proyect = () => {
 
                     <Col sm={12}>
 
-                        <h2 className='title'><span className='textSpan myProject'>MY </span>PROJECTS</h2>
+                        <h2 className='title'>
+                            <span className='textSpan myProject'>
+                                <FormattedMessage id='id-project-title1' defaultMessage='loading' />
+                            </span>{" "}
+                            <FormattedMessage id='id-project-title2' defaultMessage='loading' />
+                        </h2>
                     </Col>
                     <Col sm={12} className='cont-Carrousel'>
 
                         <div className='subtitle-secund titleProBack'>
-                            Projects developed with great dedication.
+                            <FormattedMessage id='id-project-descrip' defaultMessage='loading' />
                         </div>
                         {
                             projectsLists

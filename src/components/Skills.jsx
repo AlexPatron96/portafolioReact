@@ -4,11 +4,11 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Button from 'react-bootstrap/Button';
-import images from '../img/images.js'
 import Image from 'react-bootstrap/Image';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import AllSkillArray from './arraySkill.js'
+import { IntlProvider, FormattedMessage, FormattedNumber } from 'react-intl'
 
 const Skills = () => {
 
@@ -35,12 +35,23 @@ const Skills = () => {
             <Container>
                 <Row>
 
-                    <h2 className='title'><span className='textSpan Skillme'>MY</span> SKILLS</h2>
+                    <h2 className='title'>
+                        <span className='textSpan Skillme'>
+                            <FormattedMessage id='id-skills-title1' defaultMessage='Loading' />
+                        </span>{' '}
+                        <FormattedMessage id='id-skills-title2' defaultMessage='Loading' />
+                    </h2>
                     <Col sm={12} className="skill-contButton">-
                         <ButtonGroup>
-                            <Button variant="outline-info" id='btn-person' onClick={buttonFront}>Front-End</Button>
-                            <Button variant="outline-dark" id='btn-person' onClick={buttonAll}>All</Button>
-                            <Button variant="outline-info" id='btn-person' onClick={buttonBack}>Back-End</Button>
+                            <Button variant="outline-info" id='btn-person' onClick={buttonFront}>
+                                <FormattedMessage id='id-skills-btnFrt' defaultMessage='Loading' />
+                            </Button>
+                            <Button variant="outline-dark" id='btn-person' onClick={buttonAll}>
+                                <FormattedMessage id='id-skills-btnAll' defaultMessage='Loading' />
+                            </Button>
+                            <Button variant="outline-info" id='btn-person' onClick={buttonBack}>
+                                <FormattedMessage id='id-skills-btnBak' defaultMessage='Loading' />
+                            </Button>
                         </ButtonGroup>
                     </Col>
                     <Col sm={12} className="skill-contSkllItem">
@@ -52,15 +63,16 @@ const Skills = () => {
 
                                         <OverlayTrigger
                                             placement="top"
-
-                                            overlay={<Tooltip id="button-tooltip-2">{obj.description}</Tooltip>}
+                                            overlay={<Tooltip id="button-tooltip-2">
+                                                <FormattedMessage id={obj.description} defaultMessage='Loading' />
+                                            </Tooltip>}
                                         >
                                             {({ ref, ...triggerHandler }) => (
-                                                <Button
+                                                <button
                                                     variant="light"
                                                     {...triggerHandler}
                                                     id="butSkill"
-                                                    className="d-inline-flex align-items-center "
+                                                    className="skills-btnItem"
                                                 >
                                                     <Image
                                                         className='imgSkill'
@@ -68,7 +80,7 @@ const Skills = () => {
                                                         src={obj.img}
                                                     />
                                                     <span className="ms-1 nameSkill">{obj.name}</span>
-                                                </Button>
+                                                </button>
                                             )}
                                         </OverlayTrigger>
                                     </div>
@@ -78,6 +90,7 @@ const Skills = () => {
                     </Col>
 
                 </Row>
+
             </Container>
         </div >
     );

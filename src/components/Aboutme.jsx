@@ -4,6 +4,7 @@ import Image from 'react-bootstrap/Image'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { IntlProvider, FormattedMessage, FormattedNumber } from 'react-intl'
 
 const Aboutme = () => {
     return (
@@ -12,9 +13,16 @@ const Aboutme = () => {
             <Container>
 
                 <Row>
-                    <h2 className='title'>ABOUT <span className='textSpan AboutMe'>ME</span></h2>
+                    <h2 className='title'>
+                        <FormattedMessage id='id-aboutme-title1' defaultMessage='ABOUT' />{" "}
+                        <span className='textSpan AboutMe'>
+                            <FormattedMessage id='id-aboutme-title2' defaultMessage='' />
+                        </span>
+                    </h2>
                     <Col sm={12}>
-                        <p className='paragraph'>I have always been very cheerful, self-taught and enthusiastic about technology, I like to listen to the opinions of others, learn and share my knowledge with whoever requests it. I am characterized by my adaptability, creative mind and socialization with work teams, continuing to develop myself through continuous learning, improving my skills, acquiring more experience and at all times being willing to go beyond my limitations.</p>
+                        <p className='paragraph'>
+                            <FormattedMessage id='id-aboutme-descrip' defaultMessage='Text Description' />
+                        </p>
                     </Col>
                     <Col sm={5} className="contColAbout">
                         <div className='cont-img-present'>
@@ -24,30 +32,51 @@ const Aboutme = () => {
                     <Col sm={7}>
                         <Row>
                             <Col sm={6}>
-                                <h4 className='subtitle'>Education</h4>
-                                <div>
+                                <h4 className='subtitle'>
+                                    <FormattedMessage id='id-aboutme-titleEdu' defaultMessage='Edu' />
+                                </h4>
+                                <div className='about-contEduExp'>
                                     <div><i className='bx bxs-calendar'></i> 2022-2022</div>
-                                    <h5 className='subtitle-secund'>Full Stack Developer - Academlo</h5>
-                                    <h6 className='paragraph'>+700 theoretical-practical course hours.</h6>
+                                    <h5 className='subtitle-secund'>
+                                        <FormattedMessage id='id-aboutme-edutitle1' defaultMessage='Edu' />
+                                    </h5>
+                                    <h6 className='paragraph'>
+                                        <FormattedMessage id='id-aboutme-edudesc1' defaultMessage='loading' />
+                                    </h6>
                                 </div>
-                                <div>
+                                <div className='about-contEduExp'>
                                     <div><i className='bx bxs-calendar'></i> 2014-2022</div>
-                                    <h5 className='subtitle-secund'>TIC Engineering - Luis Vargas Torres Technical University</h5>
-                                    <h6 className='paragraph'>Final project Group software development</h6>
+                                    <h5 className='subtitle-secund'>
+                                        <FormattedMessage id='id-aboutme-edutitle2' defaultMessage='loading' />
+                                    </h5>
+                                    <h6 className='paragraph'>
+                                        <FormattedMessage id='id-aboutme-edudesc2' defaultMessage='loading' />
+                                    </h6>
                                 </div>
                             </Col>
                             <Col sm={6}>
-                                <h4 className='subtitle'>Experience</h4>
-                                <div>
+                                <h4 className='subtitle'>
+                                    <FormattedMessage id='id-aboutme-titleExp' defaultMessage='loading' />
+                                </h4>
+                                <div className='about-contEduExp'>
                                     <div><i className='bx bxs-calendar'></i> 2022-2022</div>
-                                    <h5 className='subtitle-secund'>EPMAPSE - Public Company</h5>
-                                    <h6 className='paragraph'>Project development for the company's medical department</h6>
+                                    <h5 className='subtitle-secund'>
+                                        <FormattedMessage id='id-aboutme-exptitle1' defaultMessage='loading' />
+                                    </h5>
+                                    <h6 className='paragraph'>
+                                        <FormattedMessage id='id-aboutme-expdesc1' defaultMessage='loading' />
+                                    </h6>
                                 </div>
-                                <div>
+                                <div className='about-contEduExp'>
                                     <div><i className='bx bxs-calendar'></i> 2022-2022</div>
-                                    <h5 className='subtitle-secund'>EPMAPSE - Public Company</h5>
-                                    <h6 className='paragraph'>Project development for the company's medical department</h6>
+                                    <h5 className='subtitle-secund'>
+                                        <FormattedMessage id='id-aboutme-exptitle1' defaultMessage='loading' />
+                                    </h5>
+                                    <h6 className='paragraph'>
+                                        <FormattedMessage id='id-aboutme-expdesc1' defaultMessage='loading' />
+                                    </h6>
                                 </div>
+
                             </Col>
                         </Row>
                     </Col>

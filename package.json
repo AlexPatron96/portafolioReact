@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "axios": "^1.2.1",
     "bootswatch": "^5.2.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.6.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.40.0",
+    "react-intl": "^6.2.5",
     "typed.js": "^2.0.12",
     "wc-typed-js": "^1.0.1"
   },

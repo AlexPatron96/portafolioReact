@@ -3,21 +3,54 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { IntlProvider, FormattedMessage, FormattedNumber } from 'react-intl'
+
 
 const BarNavegation = () => {
     return (
         <Navbar collapseOnSelect expand="xl" bg="person" variant="dark" >
             <Container>
                 <Navbar.Brand className='logo-page' href="/">
-                    <h1>Boss<span>Design</span></h1>
+                    <h1>
+                        <FormattedMessage
+                            id='id-logo1'
+                            defaultMessage='Boss'
+                        />
+                        <span>
+                            <FormattedMessage
+                                id='id-logo2'
+                                defaultMessage='Desing'
+                            />
+                        </span>
+                    </h1>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="justify-content-end flex-grow-1 pe-3">
-                        <Nav.Link href="#ini">Inicio</Nav.Link>
-                        <Nav.Link href="#hab">Habilidades</Nav.Link>
-                        <Nav.Link href="#port">Portafolio</Nav.Link>
-                        <Nav.Link href="#cont">Contáctame</Nav.Link>
+                        <Nav.Link href="#ini">
+                            <FormattedMessage
+                                id='id-nBar-init'
+                                defaultMessage='Home'
+                            />
+                        </Nav.Link>
+                        <Nav.Link href="#hab">
+                            <FormattedMessage
+                                id='id-nBar-skill'
+                                defaultMessage='Skills'
+                            />
+                        </Nav.Link>
+                        <Nav.Link href="#port">
+                            <FormattedMessage
+                                id='id-nBar-portafolio'
+                                defaultMessage='Portafolio'
+                            />
+                        </Nav.Link>
+                        <Nav.Link href="#cont">
+                            <FormattedMessage
+                                id='id-nBar-contact'
+                                defaultMessage='Contact'
+                            />
+                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

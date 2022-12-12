@@ -1,4 +1,3 @@
-
 /*==============  NAVBAR DELA PAGINA  =================*/
 
 
@@ -9,3 +8,19 @@
 .nav-link:hover {
     text-shadow: 2px 4px 10px rgb(19, 1, 1);
 } */
+
+
+/*======== BARRA DE NAVEGACION ==========*/
+.navbar {
+    /* box-shadow: 1px 1px 10px 1px var(--shadow); */
+}
+
+.bg-person {
+    background-color: var(--nav-color);
+}
+
+.navbar {
+    margin-bottom: 0; /*EN 2 REM DEJAR EL MARGIN BOTTON EN UN TAMANO MAS*/
+}
+
+/*=======================================*/

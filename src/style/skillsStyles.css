@@ -1,0 +1,64 @@
+/*======= MIS HABILIDADES - skills ==========*/
+.textSpan.Skillme {
+    font-size: 40px;
+}
+
+#btn-person {
+    border-color: var(--button-color-border);
+    color: var(--text-color);
+}
+
+#btn-person:hover {
+    background-color: var(--button-color);
+    color: var(--text-color-hover);
+}
+
+.skill-contButton {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+
+
+.skill-contSkllItem>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.skill-contSkllItem {
+    min-height: 320px;
+}
+
+.imgSkill {
+    width: 75px;
+    height: 75px;
+}
+
+#butSkill {
+    color: var(--text-color);
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 4px 0.20rem;
+}
+
+#butSkill:hover {
+    border-color: var(--button-color-border);
+}
+
+.tooltip-inner {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Sono', sans-serif;
+    background: var(--body-color2) !important;
+    color: var(--text-color-hoverINV) !important;
+}
+
+.tooltip-arrow::before {
+    display: none;
+}

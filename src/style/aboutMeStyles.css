@@ -1,0 +1,61 @@
+.textSpan.AboutMe {
+    font-size: 40px;
+}
+
+.about-contEduExp {
+    cursor: pointer;
+    min-height: 130px;
+}
+
+.about-contEduExp:hover {
+    border-radius: 7px;
+    animation: border 2s infinite ease;
+
+}
+
+@keyframes border {
+    0% {
+        border-bottom: 5px solid #4dcdcbc0;
+        transition: 1s ease;
+    }
+
+    12.5% {
+        border-bottom: 5px solid #52b4d2b7;
+        transition: 1s ease;
+    }
+
+    25% {
+        border-bottom: 5px solid #569cd9b3;
+        transition: 1s ease;
+    }
+
+    37.5% {
+        border-bottom: 5px solid #5d68e6c3;
+        transition: 1s ease;
+    }
+
+    50% {
+        border-bottom: 5px solid #6246efac;
+        transition: 1s ease;
+    }
+
+    62.5% {
+        border-bottom: 5px solid #6246efae;
+        transition: 1s ease;
+    }
+
+    75% {
+        border-bottom: 5px solid #5d68e6af;
+        transition: 1s ease;
+    }
+
+    87.5% {
+        border-bottom: 5px solid #52b4d2c0;
+        transition: 1s ease;
+    }
+
+    100% {
+        border-bottom: 5px solid #4dcdcbb2;
+        transition: 1s ease;
+    }
+}

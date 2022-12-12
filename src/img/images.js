@@ -20,7 +20,8 @@ import imgP3 from '../img/P3.png'
 import imgP4 from '../img/P4.png'
 import imgP5 from '../img/P5.png'
 import imgP6 from '../img/P6.png'
-
+import spain from '../img/spain.png'
+import usa from '../img/usa.png'
 
 export default {
     'redux':redux,
@@ -45,4 +46,6 @@ export default {
     'imgP4':imgP4,
     'imgP5':imgP5,
     'imgP6':imgP6,
+    'spain':spain,
+    'usa':usa
 }

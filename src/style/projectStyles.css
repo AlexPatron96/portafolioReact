@@ -1,0 +1,195 @@
+/**/
+.cont-Carrousel {
+    position: relative;
+}
+
+.textSpan.myProject {
+    font-size: 40px;
+}
+
+.carrousel-projectItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+.btn-carrousel {
+    padding: 0;
+    background: rgb(0, 0, 0, 0.2);
+    border: none;
+    margin: 0.125rem;
+    width: 32px;
+    height: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activeItem {
+    border: 2px solid var(--secund-color);
+}
+
+.contCarrouselData {
+    display: flex;
+    flex-direction: column;
+    transition: 1s ease;
+}
+
+.itemImgCarrousel {
+    width: 28px;
+    height: 15px;
+    object-fit: contain;
+}
+
+.projectVideoCarrousel {
+    max-width: 650px;
+    transition: 1s ease;
+}
+
+.front-video {
+    position: relative;
+    animation: movementNext 1.2s normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+}
+
+@keyframes movementNext {
+    0% {
+        opacity: 0;
+        /* left: 50%; */
+        width: 0;
+    }
+
+    100% {
+        /* left: 0; */
+        width: 100%;
+    }
+}
+
+#btnCarrNextPrev {
+    width: 40px;
+    height: 40px !important;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(0, 0, 0, 0.2);
+    border: 2px solid var(--button-color-border);
+    color: var(--text-color);
+}
+
+#btnCarrNextPrev:active {
+    border: 4px solid var(--button-color-border);
+    color: var(--text-color-hover);
+}
+
+.carrousel-btPrev {
+    position: absolute;
+    top: 50%;
+    left: 4%;
+}
+
+.carrousel-btNext {
+    position: absolute;
+    top: 50%;
+    left: 85%;
+}
+
+.back-video {
+    top: 90px;
+    left: 0;
+    max-width: 550px;
+    height: 325px;
+    padding: 1rem;
+    position: absolute;
+    border-radius: 40px;
+    background:var(--body-color) ;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin: 1rem;
+    display: none;
+}
+
+.back-video-active {
+    display: block;
+}
+
+.titleProBack {
+    text-align: center !important;
+    margin: 0.5rem 0;
+}
+
+.contUsedTechnologyProject {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.contImgTitleUsedTec {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.textTecUsed {
+    font-size: 12px;
+    color: var(--text-color) !important;
+}
+
+.imgTecUsed {
+    width: 50px;
+    height: 50px;
+}
+
+.contProjectLinks {
+    display: flex;
+    justify-content: center;
+
+}
+
+.ProjectLinks {
+    text-decoration: none;
+    color: var(--text-color)
+}
+
+.back-video::-webkit-scrollbar {
+    width: 9px;
+    /* Tamaño del scroll en vertical */
+    height: 9px;
+    /* Tamaño del scroll en horizontal */
+}
+
+.back-video::-webkit-scrollbar-thumb {
+    background: var(--first-color);
+    border-radius: 4px;
+    border-bottom: 2px solid rgba(225, 225, 225, 0.818);
+    border-right: 2px solid rgba(225, 225, 225, 0.8);
+}
+
+.back-video::-webkit-scrollbar-button {
+    background: transparent;
+    height: 55px;
+}
+
+.back-video::-webkit-scrollbar-track {
+    background: var(--shadow);
+    border-radius: 4px;
+
+}
+
+.back-video::-webkit-scrollbar-thumb:hover {
+    background: rgba(225, 225, 225, 0.818);
+    border-bottom: 2px solid var(--first-color);
+    border-right: 2px solid var(--first-color);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+}

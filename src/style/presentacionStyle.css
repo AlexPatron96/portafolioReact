@@ -1,0 +1,108 @@
+/*== EFECTO ESCRITURA ==*/
+.textSpan>strong {
+    font-size: 30px;
+    font-family: 'Sono', sans-serif;
+
+}
+
+.type-wrap>span {
+    font-size: 40px;
+}
+
+
+.typed-cursor {
+    opacity: 1;
+    animation: typedjsBlink 0.7s infinite;
+    -webkit-animation: typedjsBlink 0.7s infinite;
+    animation: typedjsBlink 0.7s infinite;
+}
+
+@keyframes typedjsBlink {
+    50% {
+        opacity: 0.0;
+    }
+}
+
+@-webkit-keyframes typedjsBlink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.typed-fade-out {
+    opacity: 0;
+    transition: opacity .25s;
+    -webkit-animation: 0;
+    animation: 0;
+}
+
+/*=====================*/
+
+
+
+/*======= COMPONENTE PRESENTACION =======*/
+.cont-img-present {
+    display: flex;
+    position: relative !important;
+    justify-content: center;
+    flex-direction: column;
+    transition: ease 2s;
+    text-align: center;
+}
+
+.name-title {
+    color: var(--title-color-h1);
+    font-family: 'Eurostile', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.textSpan {
+    color: var(--title-secund-color);
+    font-family: "europa", sans-serif;
+    /* font-family: 'Sono', sans-serif; */
+}
+
+.nameLarge {
+    font-size: 40px;
+}
+
+
+.img-present {
+    max-width: 375px; 
+    object-fit: contain;
+    transition: ease-in 2s;
+    border-radius: 50%;
+    margin: 0 2rem; /* EL TAMANO DEBE DE QUEDAR EN 0 1REM */
+    border: 8px solid var(--title-secund-color);
+}
+
+.contColAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.col-sm-4 {
+    transition: ease-in 2s;
+}
+
+
+.contComp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    min-height: 600px;
+}

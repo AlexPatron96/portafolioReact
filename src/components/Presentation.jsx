@@ -5,19 +5,31 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Typed from 'typed.js';
+import { IntlProvider, FormattedMessage, FormattedNumber } from 'react-intl'
 
-const Presentation = ({render}) => {
+const Presentation = ({ render, locale }) => {
 
 
     const el = React.useRef(null);
     const typed = React.useRef(null);
+
     React.useEffect(() => {
+        let string = []
+        if (locale === "es-ES") {
+            string = [
+                `<strong>Desarrollador</strong>`,
+                `<strong>Diseñador</strong>`,
+                `<strong>Mentor</strong>`,
+            ]
+        } else if (locale === "en-US") {
+            string = [
+                `<strong>Developer</strong>`,
+                `<strong>Designer</strong>`,
+                `<strong>Mentor</strong>`,
+            ]
+        }
         const options = {
-            strings: [
-                '<strong>Developer</strong>',
-                '<strong>Designer</strong>',
-                '<strong>Mentor</strong>'
-            ],
+            strings: string,
             typeSpeed: 50,
             backSpeed: 50,
             loop: true,
@@ -27,7 +39,7 @@ const Presentation = ({render}) => {
         return () => {
             typed.current.destroy();
         }
-    }, [])
+    }, [locale])
 
 
     return (
@@ -37,14 +49,24 @@ const Presentation = ({render}) => {
 
                 <Row>
                     <Col sm={7}>
-                        <h1 className='name-title'>Hi, I'am <br /> <span className='textSpan nameLarge'>Alex Patron</span></h1>
-                        <p className='paragraph'>I design and code beautifully simple things, and I love what I do.</p>
+                        <h1 className='name-title'>
+                            <FormattedMessage id='id-Presentation-greeting' defaultMessage='Hi' />
+                            <br />
+                            <span className='textSpan nameLarge'>
+                                <FormattedMessage id='id-Presentation-name' defaultMessage='Alex' />
+                            </span>
+                        </h1>
+                        <p className='paragraph'>
+                            <FormattedMessage id='id-Presentation-textPre' defaultMessage='Text Description' />
+                        </p>
                     </Col>
                     <Col sm={5}>
                         <div className='cont-img-present'>
                             <Image src={render ? images['myAvatar-dark'] : images.myAvatar} className="img-present"></Image>
                             <div className="type-wrap">
-                                <span style={{ whiteSpace: 'pre' }} ref={el} className="textSpan" />
+                                <span style={{ whiteSpace: 'pre' }} ref={el} className="textSpan">
+
+                                </span>
                             </div>
                         </div>
                     </Col>

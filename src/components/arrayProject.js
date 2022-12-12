@@ -1,12 +1,12 @@
 import images from '../img/images.js'
 import videos from '../video/videos.js'
-
+import lenguaje from '../lang/en-US.json'
 
 export default [
     {
         'id': 1,
-        'name': "Ecommerce BossDesing",
-        'description': 'Online store for the commercialization of all kinds of products.',
+        'name': "id-project-pro1title",
+        'description': 'id-project-pro1desc',
         "Tecnologias": [
             {
                 'name': 'React',
@@ -39,14 +39,14 @@ export default [
 
         ],
         'video': videos.pro1,
-        'pag': '',
-        'repogit': '',
+        'pag': 'https://store-dispa.netlify.app',
+        'repogit': 'https://github.com/AlexPatron96/ecommersReact',
         'img': images.imgP1,
     },
     {
         'id': 2,
-        'name': "Rick and Morty Wiki",
-        'description': 'Website to consult the universes of the animated series Rick and Morty.',
+        'name': "id-project-pro2title",
+        'description': 'id-project-pro2desc',
         "Tecnologias": [
             {
                 'name': 'React',
@@ -70,14 +70,14 @@ export default [
             },
         ],
         'video': videos.pro2,
-        'pag': '',
-        'repogit': '',
+        'pag': 'https://rickyandmortywiki.netlify.app',
+        'repogit': 'https://github.com/AlexPatron96/RickAndMortyWiki.git',
         'img': images.imgP2,
     },
     {
         'id': 3,
-        'name': "PokeDesk",
-        'description': 'Website where you can find all the information related to the animated series Pokemon.',
+        'name': "id-project-pro3title",
+        'description': 'id-project-pro3desc',
         "Tecnologias": [
             {
                 'name': 'React',
@@ -101,14 +101,14 @@ export default [
             },
         ],
         'video': videos.pro3,
-        'pag': '',
-        'repogit': '',
+        'pag': 'https://pokewikiclassic.netlify.app',
+        'repogit': 'https://github.com/AlexPatron96/pokedesk.git',
         'img': images.imgP3,
     },
     {
         'id': 4,
-        'name': "Cards with random phrases",
-        'description': 'Simple website but applying the programming logic, consuming an api.',
+        'name': "id-project-pro4title",
+        'description': 'id-project-pro4desc',
         "Tecnologias": [
             {
                 'name': 'React',
@@ -128,14 +128,14 @@ export default [
             },
         ],
         'video': videos.pro4,
-        'pag': '',
-        'repogit': '',
+        'pag': 'https://quiet-faun-232f17.netlify.app',
+        'repogit': 'https://github.com/AlexPatron96/quotesRandom.git',
         'img': images.imgP4,
     },
     {
         'id': 5,
-        'name': "Weather App",
-        'description': 'Information application of the weather status of the place where you are.',
+        'name': "id-project-pro5title",
+        'description': 'id-project-pro5desc',
         "Tecnologias": [
             {
                 'name': 'React',
@@ -159,14 +159,14 @@ export default [
             },
         ],
         'video': videos.pro5,
-        'pag': '',
-        'repogit': '',
+        'pag': 'https://weatherappalex.netlify.app',
+        'repogit': 'https://github.com/AlexPatron96/weather.git',
         'img': images.imgP5,
     },
     {
         'id': 6,
-        'name': "Portafolio Web",
-        'description': 'My first portfolio with vanilla javascript, html and css. My first steps in web programming.',
+        'name': "id-project-pro6title",
+        'description': 'id-project-pro6desc',
         "Tecnologias": [
             {
                 'name': 'JavaScritp',
@@ -182,8 +182,8 @@ export default [
             },
         ],
         'video': videos.pro6,
-        'pag': '',
-        'repogit': '',
+        'pag': 'https://alexpatron96.github.io/PORTAFOLIO/',
+        'repogit': 'https://github.com/AlexPatron96/PORTAFOLIO.git',
         'img': images.imgP6,
     },
 ]
