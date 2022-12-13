@@ -7,11 +7,8 @@ import Col from 'react-bootstrap/Col';
 import Typed from 'typed.js';
 import { IntlProvider, FormattedMessage, FormattedNumber } from 'react-intl'
 import cv from '../document/CV-ALEX-PATRON.pdf'
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Tooltip from 'react-bootstrap/Tooltip';
-import cvImg from '../../../cv.png'
-import gitImg from '../../../git.png'
-import lin from '../../../linkedin.png'
+
+
 
 const Presentation = ({ render, locale }) => {
 
@@ -80,15 +77,15 @@ const Presentation = ({ render, locale }) => {
                             </a> */}
 
                             <a id='id-btncv' className='btn-downloadCv' href={cv} download="CV-ALEX-PATRON.pdf">
-                                <img  className='imgbtnLink' src={lin} alt="" />
+                                <img  className='imgbtnLink' src={images.lin} alt="" />
                             </a>
 
                             <a id='id-btncv' className='btn-downloadCv' href={cv} download="CV-ALEX-PATRON.pdf">
-                                <img className='imgbtnLink'  src={cvImg} alt="" />
+                                <img className='imgbtnLink'  src={images.cvImg} alt="" />
                             </a>
 
                             <a id='id-btncv' className='btn-downloadCv' href={cv} download="CV-ALEX-PATRON.pdf">
-                                <img  className='imgbtnLink' src={gitImg} alt="" />
+                                <img  className='imgbtnLink' src={images.gitImg} alt="" />
                             </a>
 
                             {/* <a id='id-btncv' className='btn-downloadCv' href={cv} download="CV-ALEX-PATRON.pdf">
@@ -115,6 +112,3 @@ const Presentation = ({ render, locale }) => {
 };
 
 export default Presentation;
-{/* <p className='pag-parr'>Soy un desarrollador web enfocado en el front-end, desarrollo de aplicaciones y plataformas web, estoy dispuesto a aprender y mejorar mis habilidades, creando proyectos, logrando retos y con mucho entusiasmo, dar todo mis conocimientos en beneficio de quien lo solicite.</p> */ }
-{/* <h3 className='pag-subtitle'>Developer</h3> */ }
-{/* <h2 className='pag-title'>Bienvenido a mi portafolio</h2> */ }

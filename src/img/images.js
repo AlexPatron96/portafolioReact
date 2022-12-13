@@ -23,6 +23,11 @@ import imgP6 from '../img/P6.png'
 import spain from '../img/spain.png'
 import usa from '../img/usa.png'
 import click from '../img/grifo.png'
+import cvImg from '../img/cv.png'
+import gitImg from '../img/git.png'
+import lin from '../img/linkedin.png'
+
+
 export default {
     'redux':redux,
     'react':react,
@@ -48,5 +53,8 @@ export default {
     'imgP6':imgP6,
     'spain':spain,
     'usa':usa,
-    'click':click
+    'click':click,
+    'cvImg':cvImg,
+    'gitImg':gitImg,
+    'lin':lin
 }
