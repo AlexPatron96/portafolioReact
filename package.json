@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@lottiefiles/lottie-player": "^1.6.2",
     "aos": "^2.3.4",
     "axios": "^1.2.1",
     "bootswatch": "^5.2.2",
