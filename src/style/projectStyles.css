@@ -28,7 +28,7 @@
 }
 
 .activeItem {
-    border: 2px solid var(--secund-color);
+    border: 5px solid var(--first-color) ;
 }
 
 .contCarrouselData {
@@ -105,10 +105,12 @@
 }
 
 .back-video {
-    top: 10%;
-    left: 0%;
-    max-width: 550px;
-    height: 275px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 300px;
+    max-width: 650px;
+    height: 300px;
     padding: 0.5rem;
     position: absolute;
     border-radius: 40px;
@@ -117,8 +119,8 @@
     overflow-x: hidden;
     /* margin: 1rem; */
     display: none;
-    border-top: 2px solid var(--first-color);
-    border-bottom: 2px solid var(--first-color);
+    border-top: 3px solid var(--first-color);
+    border-bottom: 3px solid var(--first-color);
 }
 
 .back-video-exitData {

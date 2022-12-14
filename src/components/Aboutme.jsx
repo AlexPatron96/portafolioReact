@@ -31,11 +31,11 @@ const Aboutme = () => {
                     </Col>
                     <Col sm={7}>
                         <Row>
-                            <Col sm={6}>
-                                <h4 className='subtitle'>
+                            <Col sm={6} data-aos="zoom-in">
+                                <h4 className='subtitle' >
                                     <FormattedMessage id='id-aboutme-titleEdu' defaultMessage='Edu' />
                                 </h4>
-                                <div className='about-contEduExp'>
+                                <div className='about-contEduExp' data-aos="zoom-in-up">
                                     <div><i className='bx bxs-calendar'></i> 2022-2022</div>
                                     <h5 className='subtitle-secund'>
                                         <FormattedMessage id='id-aboutme-edutitle1' defaultMessage='Edu' />
@@ -44,21 +44,21 @@ const Aboutme = () => {
                                         <FormattedMessage id='id-aboutme-edudesc1' defaultMessage='loading' />
                                     </h6>
                                 </div>
-                                <div className='about-contEduExp'>
+                                <div className='about-contEduExp' data-aos="zoom-in-up">
                                     <div><i className='bx bxs-calendar'></i> 2014-2022</div>
                                     <h5 className='subtitle-secund'>
                                         <FormattedMessage id='id-aboutme-edutitle2' defaultMessage='loading' />
                                     </h5>
-                                    <h6 className='paragraph'>
+                                    <h6 className='paragraph' data-aos="zoom-in-up">
                                         <FormattedMessage id='id-aboutme-edudesc2' defaultMessage='loading' />
                                     </h6>
                                 </div>
                             </Col>
-                            <Col sm={6}>
-                                <h4 className='subtitle'>
+                            <Col sm={6} data-aos="zoom-in">
+                                <h4 className='subtitle' >
                                     <FormattedMessage id='id-aboutme-titleExp' defaultMessage='loading' />
                                 </h4>
-                                <div className='about-contEduExp'>
+                                <div className='about-contEduExp' data-aos="zoom-in-up">
                                     <div><i className='bx bxs-calendar'></i> 2022-2022</div>
                                     <h5 className='subtitle-secund'>
                                         <FormattedMessage id='id-aboutme-exptitle1' defaultMessage='loading' />
@@ -67,7 +67,7 @@ const Aboutme = () => {
                                         <FormattedMessage id='id-aboutme-expdesc1' defaultMessage='loading' />
                                     </h6>
                                 </div>
-                                <div className='about-contEduExp'>
+                                <div className='about-contEduExp' data-aos="zoom-in-up">
                                     <div><i className='bx bxs-calendar'></i> 2022-2022</div>
                                     <h5 className='subtitle-secund'>
                                         <FormattedMessage id='id-aboutme-exptitle1' defaultMessage='loading' />

@@ -54,12 +54,12 @@ const Skills = () => {
                             </Button>
                         </ButtonGroup>
                     </Col>
-                    <Col sm={12} className="skill-contSkllItem">
+                    <Col sm={12} className="skill-contSkllItem" >
                         <div>
 
                             {
                                 skills.map(obj => (
-                                    <div key={obj.name}>
+                                    <div key={obj.name} data-aos="zoom-in">
 
                                         <OverlayTrigger
                                             placement="top"

@@ -4,8 +4,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import axios from 'axios';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
 import * as LottiePlayer from "@lottiefiles/lottie-player";
 import MyVerticallyCenteredModal from './MyVerticallyCenteredModal';
 
@@ -25,7 +23,7 @@ const ContactMe = () => {
 
     }
     return (
-        <div id='id-contactMe'>
+        <div id='id-contactMe' data-aos="fade-down">
             <h2 className='title' >
                 {/* <FormattedMessage id='id-aboutme-title1' defaultMessage='ABOUT' />{" "} */}
                 Contact
@@ -36,8 +34,8 @@ const ContactMe = () => {
             </h2>
 
             <div className='contac-myInfo'>
-                <Container>
-                    <Row>
+                <Container data-aos="zoom-in-up">
+                    <Row >
                         <Col sm={6}>
                             <div className='myInfo' >
                                 <i className='bx bxl-whatsapp bx-lg' ></i>
@@ -67,7 +65,7 @@ const ContactMe = () => {
             </div>
 
 
-            <form onSubmit={handleSubmit(submit)} className='cont-row-col'>
+            <form onSubmit={handleSubmit(submit)} className='cont-row-col' data-aos="zoom-in-up">
                 <Container>
                     <Row>
                         <Col sm={6}>
@@ -100,7 +98,7 @@ const ContactMe = () => {
                         </Col>
                     </Row>
                 </Container>
-                <button className='contac-btnsubmit'>Send</button>
+                <button className='contac-btnsubmit'>Hire Me</button>
             </form>
             <div>
 

@@ -102,7 +102,7 @@ function App() {
                 <Proyect></Proyect>
                 <ContactMe></ContactMe>
                 <FooterPage></FooterPage>
-                <button className={`switch ${render === "dark" ? 'activeDark' : ''}`} id='switch' onClick={btnSwitch}>
+                <button className={`switch ${render === "dark" ? 'activeDark switchTheme-active'  :'switchTheme-active'}`} id='switch' onClick={btnSwitch}>
                     <span><i className='bx bxs-sun' ></i></span>
                     <span><i className='bx bxs-moon' ></i></span>
                 </button>

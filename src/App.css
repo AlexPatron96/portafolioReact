@@ -10,6 +10,9 @@
 @import url("./style/skillsStyles.css");
 @import url("./style/projectStyles.css");
 @import url("./style/contacStyles.css");
+@import url("./style/footerStyles.css");
+
+
 :root {
     /*========== Colors ==========*/
     --nave: url(https://www.flaticon.es/download/icon/2285537?icon_id=2285537&author=427&team=427&keyword=lanzadera&pack=2285527&style=0&style_id=6&format=png&color=%23000000&colored=2&size=512&selection=1&premium=0&type=standard);
@@ -41,12 +44,13 @@
     /*========== Font and typography ==========*/
     --body-font: "Roboto", sans-serif;
 }
+
 /*
 font-family: 'Eurostile', sans-serif;
     font-family: 'Montserrat', sans-serif;
     /* color: #4DCDCB; - color primario */
-    /* color: #6246ef; - color primario */
-    /* font-family: 'EuropaNuova-Bold', sans-serif;
+/* color: #6246ef; - color primario */
+/* font-family: 'EuropaNuova-Bold', sans-serif;
     font-family: 'EuropaNuova-ExtraBold', sans-serif;
     font-family: 'EuropaNuova-Regular', sans-serif;
     font-family: 'Sono', sans-serif; */
@@ -94,7 +98,7 @@ body {
 
 #body-person {
     background: var(--body-color);
-    
+
 }
 
 /**/
@@ -270,8 +274,7 @@ body {
     max-width: 800px;
     display: flex;
     flex-direction: column;
-    margin: 0 auto; 
-   
+    margin: 0 auto;
 }
 
 
@@ -297,19 +300,10 @@ body {
         transition: 1s ease;
     }
 
-    /* .back-video::-webkit-scrollbar {
-        display: none;
-    } */
 }
 
 @media screen and (min-width: 720px) {
 
-
-
-    /* .switch {
-        top: 90%;
-        left: 90%;
-    } */
 
     .carrousel-btPrev {
         position: absolute;
@@ -326,16 +320,23 @@ body {
     .cont-Carrousel {
         display: flex;
         flex-direction: column;
-        /* align-content: center; */
         justify-content: center;
         align-items: center;
         height: 500px;
     }
+    .imgbtnLink {
+        width: 60px;
+        border-radius: 50%;
+        padding: 6px !important;
+        transition: 1s ease;
 
-    /* .back-video {
-        top: 65px;
-        left: 10%;
-    } */
+    }
+    .cont-btnLinkInf {
+        margin: 2rem auto;
+        gap: 2rem;
+        transition: 1s ease;
+    }
+
 }
 
 @media screen and (min-width: 980px) {
@@ -343,23 +344,16 @@ body {
     .cont-img-present {
         align-items: center;
     }
+    .imgbtnLink {
+        width: 90px;
+        border-radius: 50%;
+        padding: 6px !important;
+        transition: 1s ease;
 
-    /* .back-video {
-        top: 65px;
-        left: 20%;
-    } */
-}
-
-@media screen and (min-width: 1200px) {
-    /* .back-video {
-        top: 65px;
-        left: 24.5%;
-    } */
-}
-
-@media screen and (min-width: 1400px) {
-    /* .back-video {
-        top: 65px;
-        left: 27.5%;
-    } */
+    }
+    .cont-btnLinkInf {
+        margin: 4rem auto;
+        gap: 3rem;
+        transition: 1s ease;
+    }
 }
