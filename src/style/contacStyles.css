@@ -86,20 +86,23 @@
     margin: 1rem 0;
 }
 
-.bxl-whatsapp{
-    color:#25D366
+.bxl-whatsapp {
+    color: #25D366
 }
-.bxl-linkedin{
-    color:#00A0DC
+
+.bxl-linkedin {
+    color: #00A0DC
 }
-.bxl-github{
+
+.bxl-github {
     color: #171515;
-    
+
 }
-.bxs-envelope{
+
+.bxs-envelope {
     color: #0072C6;
 }
 
-.infotext{
+.infotext {
     font-size: 0.75em !important;
 }

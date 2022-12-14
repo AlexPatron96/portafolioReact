@@ -8,7 +8,7 @@ import { IntlProvider, FormattedMessage, FormattedNumber } from 'react-intl'
 
 const Aboutme = () => {
     return (
-        <div data-aos="fade-right" className='contComp'>
+        <div data-aos="fade-right" className='contComp' id='id-aboutMe'>
 
             <Container>
 

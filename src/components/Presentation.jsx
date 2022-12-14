@@ -51,7 +51,7 @@ const Presentation = ({ render, locale }) => {
         // alert('mouse move or click')
     }
     return (
-        <div className='contComp marg'  >
+        <div className='contComp marg' id='id-presentation'  >
 
             <Container>
 
@@ -68,30 +68,18 @@ const Presentation = ({ render, locale }) => {
                             <FormattedMessage id='id-Presentation-textPre' defaultMessage='Text Description' />
                         </p>
                         <div className='cont-btnLinkInf'>
-                            {/* <a href="">
-                                <i class='bx bxl-github bx-lg' ></i>
-                            </a>
 
-                            <a href=""  >
-                                <i class='bx bxl-linkedin bx-lg'></i>
-                            </a> */}
-
-                            <a id='id-btncv' className='btn-downloadCv' href={cv} download="CV-ALEX-PATRON.pdf">
-                                <img  className='imgbtnLink' src={images.lin} alt="" />
+                            <a id='id-btncv' className='btn-downloadCv' href="https://www.linkedin.com/in/alex-patron1996/" target="_blank">
+                                <img className='imgbtnLink' src={images.lin} alt="" />
                             </a>
 
                             <a id='id-btncv' className='btn-downloadCv' href={cv} download="CV-ALEX-PATRON.pdf">
-                                <img className='imgbtnLink'  src={images.cvImg} alt="" />
+                                <img className='imgbtnLink' src={images.cvImg} alt="" />
                             </a>
 
-                            <a id='id-btncv' className='btn-downloadCv' href={cv} download="CV-ALEX-PATRON.pdf">
-                                <img  className='imgbtnLink' src={images.gitImg} alt="" />
+                            <a id='id-btncv' className='btn-downloadCv' href="https://github.com/AlexPatron96" target="_blank">
+                                <img className='imgbtnLink' src={images.gitImg} alt="" />
                             </a>
-
-                            {/* <a id='id-btncv' className='btn-downloadCv' href={cv} download="CV-ALEX-PATRON.pdf">
-                                <i class='bx bx-spreadsheet bx-lg'></i>
-                            </a> */}
-
 
                         </div>
                     </Col>

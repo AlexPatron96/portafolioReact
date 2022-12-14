@@ -91,8 +91,8 @@ const Proyect = () => {
                             <FormattedMessage id='id-project-proLink' defaultMessage='loading' />
                         </h4>
                         <div className='contProjectLinks'>
-                            <a className='ProjectLinks' href=""><i className='bx bxl-github bx-lg'></i></a>
-                            <a className='ProjectLinks' href=""><i className='bx bx-world bx-lg'></i></a>
+                            <a className='ProjectLinks' href={projCarrusel.repogit} target="_black"><i className='bx bxl-github bx-lg'></i></a>
+                            <a className='ProjectLinks' href={projCarrusel.pag} target="_black"><i className='bx bx-world bx-lg'></i></a>
                         </div>
                     </div>
                 </div>
@@ -118,7 +118,7 @@ const Proyect = () => {
 
 
     return (
-        <div data-aos="fade-right" className='contComp'>
+        <div data-aos="fade-right" className='contComp' id='id-project'>
 
             <Container>
                 <Row>

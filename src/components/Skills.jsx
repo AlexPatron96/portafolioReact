@@ -30,7 +30,7 @@ const Skills = () => {
 
 
     return (
-        <div data-aos="fade-left" className='contComp'>
+        <div data-aos="fade-left" className='contComp' id='id-skills'>
 
             <Container>
                 <Row>

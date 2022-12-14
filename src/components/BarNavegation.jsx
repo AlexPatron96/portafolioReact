@@ -27,25 +27,31 @@ const BarNavegation = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="justify-content-end flex-grow-1 pe-3">
-                        <Nav.Link href="#ini">
+                        <Nav.Link href="#id-presentation">
                             <FormattedMessage
                                 id='id-nBar-init'
                                 defaultMessage='Home'
                             />
                         </Nav.Link>
-                        <Nav.Link href="#hab">
+                        <Nav.Link href="#id-aboutMe">
                             <FormattedMessage
                                 id='id-nBar-skill'
                                 defaultMessage='Skills'
                             />
                         </Nav.Link>
-                        <Nav.Link href="#port">
+                        <Nav.Link href="#id-skills">
+                            <FormattedMessage
+                                id='id-nBar-skill'
+                                defaultMessage='Skills'
+                            />
+                        </Nav.Link>
+                        <Nav.Link href="#id-project">
                             <FormattedMessage
                                 id='id-nBar-portafolio'
                                 defaultMessage='Portafolio'
                             />
                         </Nav.Link>
-                        <Nav.Link href="#cont">
+                        <Nav.Link href="#id-contactMe">
                             <FormattedMessage
                                 id='id-nBar-contact'
                                 defaultMessage='Contact'
