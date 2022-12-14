@@ -9,13 +9,14 @@
 @import url("./style/navStyles.css");
 @import url("./style/skillsStyles.css");
 @import url("./style/projectStyles.css");
-
+@import url("./style/contacStyles.css");
 :root {
     /*========== Colors ==========*/
+    --nave: url(https://www.flaticon.es/download/icon/2285537?icon_id=2285537&author=427&team=427&keyword=lanzadera&pack=2285527&style=0&style_id=6&format=png&color=%23000000&colored=2&size=512&selection=1&premium=0&type=standard);
     --body-color: radial-gradient(#f3f5f5, aliceblue);
     --body-color2: radial-gradient(#1d1f20, #000);
 
-    --nav-color: #4DCCCA;
+    --nav-color: radial-gradient(#f3f5f5, aliceblue);
     --first-color: #4DCCCA;
     --secund-color: #6246EF;
 
@@ -37,30 +38,21 @@
     --mobile: 780px;
     --tablet: 960px;
     --desktop: 1200px;
-    --oxford-blue: #0e1636ff;
-    --oxford-blue-2: #0f183bff;
-    --oxford-blue-3: #10193dff;
-    --majorelle-blue: #6b52f4ff;
-    --iris: #584bd5ff;
-    --teal-blue: #2f7386ff;
-    --medium-turquoise: #4dcccaff;
-    --medium-turquoise-2: #5dd1cfff;
-    --medium-turquoise-3: #79d9d7ff;
     /*========== Font and typography ==========*/
     --body-font: "Roboto", sans-serif;
 }
-
-/*=============== THEME ===============*/
-/*========== Variables Dark theme ==========*/
-/* 
-body {
-    background: var(--body-color);
-    font-family: var(--body-font);
-    color: var(--text-color);
-    max-width: var(--desktop);
-} */
+/*
+font-family: 'Eurostile', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    /* color: #4DCDCB; - color primario */
+    /* color: #6246ef; - color primario */
+    /* font-family: 'EuropaNuova-Bold', sans-serif;
+    font-family: 'EuropaNuova-ExtraBold', sans-serif;
+    font-family: 'EuropaNuova-Regular', sans-serif;
+    font-family: 'Sono', sans-serif; */
 
 body.theme__dark {
+    /* --nave: url(https://www.flaticon.es/download/icon/2285537?icon_id=2285537&author=427&team=427&keyword=lanzadera&pack=2285527&style=0&style_id=6&format=png&color=%23000000&colored=2&size=512&selection=1&premium=0&type=standard); */
     --body-color2: radial-gradient(#f3f5f5, aliceblue);
     --body-color: radial-gradient(#1d1f20, #000);
 
@@ -88,18 +80,21 @@ body.theme__dark {
     font-size: 22px;
     background: transparent;
     font-family: 'EuropaNuova-Regular', sans-serif;
+
 }
 
 html,
 body {
     max-width: 100% !important;
     overflow-x: hidden !important;
+    transition: background 1s ease !important;
+
 
 }
 
 #body-person {
     background: var(--body-color);
-    transition: color 1s ease !important;
+    
 }
 
 /**/
@@ -221,17 +216,6 @@ body {
 
 /*===========================*/
 
-.muestras {
-    font-family: 'Eurostile', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    /* color: #4DCDCB; - color primario */
-    /* color: #6246ef; - color primario */
-    font-family: 'EuropaNuova-Bold', sans-serif;
-    font-family: 'EuropaNuova-ExtraBold', sans-serif;
-    font-family: 'EuropaNuova-Regular', sans-serif;
-    font-family: 'Sono', sans-serif;
-
-}
 
 /*===========================*/
 
@@ -290,80 +274,7 @@ body {
    
 }
 
-.form-group {
-    position: relative;
-    margin: 0.5rem 0.5rem;
-}
 
-.form-input {
-    width: 100%;
-    color: var(--text-color);
-    font-size: 18px;
-    padding: 0.6rem 0.8rem;
-    border: none;
-    outline: none;
-    border: 2px solid var(--first-color);
-    border-radius: 15px;
-
-}
-
-.form-input:focus {
-    border: 2px solid var(--secund-color);
-}
-
-.form-input:focus+.form-label {
-    color: var(--secund-color) !important;
-}
-
-.form-input:focus+.form-label,
-.form-input:not(:placeholder-shown)+.form-label {
-    transform: translateY(-25px) scale(0.6);
-    transform-origin: left top;
-    color: var(--first-color);
-    background: var(--body-color);
-
-    /* background: var(--secund-color); */
-    border-radius: 10px;
-    padding: 5px;
-}
-
-.form-label {
-    color: var(--text-color);
-    cursor: pointer;
-    position: absolute;
-    top: 12px;
-    left: 15px;
-    transition: transform 0.5s, color 0.3s;
-}
-
-.contac-btnsubmit {
-    display: flex;
-    color: var(--text-color);
-    border: none;
-    box-shadow: 0px 6px 1px 0px var(--secund-color);
-    border-bottom: 2px solid var(--first-color);
-    background: var(--first-color);
-    border-radius: 20px;
-    padding: 1px 1rem;
-    margin: 0 auto;
-}
-
-.contac-btnsubmit:active {
-    color: var(--text-color-hover);
-    transform: translateY(4px);
-    box-shadow: 0px 2px 1px 0px var(--secund-color);
-}
-
-.modal-content{
-    width: 300px !important;
-}
-.modal-body {
-    margin: 0 auto !important;
-}
-.modal-dialog-centered {
-    align-items: center;
-    justify-content: center !important;
-}
 /*=================================*/
 @media screen and (max-width: 480px) {
     .imgSkill {

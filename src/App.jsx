@@ -12,6 +12,7 @@ import messageES from '../src/lang/es-ES.json'
 import messageUS from '../src/lang/en-US.json'
 import images from './img/images.js'
 import ContactMe from './components/ContactMe'
+import FooterPage from './components/FooterPage'
 
 function App() {
     const [messages, setMessages] = useState(messageUS)
@@ -72,15 +73,14 @@ function App() {
         }
     }
 
-
+    const switchTheme = document.querySelector('#switch')
+    console.log(switchTheme);
     const activeGears = () => {
         const switchTheme = document.querySelector('#switch')
         const lenguageActive = document.querySelector('#lenguage')
         if (lenguageActive.classList[1] === "activeGears") {
-
             lenguageActive.classList.remove('activeGears')
             switchTheme.classList.remove('switchTheme-active')
-
         } else {
             lenguageActive.classList.add('activeGears')
             switchTheme.classList.add('switchTheme-active')
@@ -101,6 +101,7 @@ function App() {
                 <Skills></Skills>
                 <Proyect></Proyect>
                 <ContactMe></ContactMe>
+                <FooterPage></FooterPage>
                 <button className={`switch ${render === "dark" ? 'activeDark' : ''}`} id='switch' onClick={btnSwitch}>
                     <span><i className='bx bxs-sun' ></i></span>
                     <span><i className='bx bxs-moon' ></i></span>

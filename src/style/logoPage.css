@@ -5,7 +5,7 @@
     font-size: 32px;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
-    color: aliceblue;
+    color: var(--title-color);
 }
 
 .logo-page>h1>span {
@@ -15,5 +15,5 @@
 }
 
 .logo-page>h1:hover {
-    text-shadow: 1px 1px 10px aliceblue;
+    text-shadow: 1px 1px 20px var(--first-color);
 }

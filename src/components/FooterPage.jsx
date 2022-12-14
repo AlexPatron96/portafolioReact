@@ -1,11 +1,13 @@
 import React from 'react';
 
 const FooterPage = () => {
-    
+
     return (
-        <div>
-            
-        </div>
+        <footer >
+            <div>
+                <h1>footer</h1>
+            </div>
+        </footer>
     );
 };
 

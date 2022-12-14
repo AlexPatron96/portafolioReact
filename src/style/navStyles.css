@@ -20,7 +20,50 @@
 }
 
 .navbar {
-    margin-bottom: 0; /*EN 2 REM DEJAR EL MARGIN BOTTON EN UN TAMANO MAS*/
+    margin-bottom: 0;
+    /*EN 2 REM DEJAR EL MARGIN BOTTON EN UN TAMANO MAS*/
 }
+
+.navbar-toggler {
+    position: relative !important;
+    border-bottom: 1px solid rgba(126, 123, 123, 0.334) !important;
+    animation: salta 4s infinite ease-out;
+}
+@keyframes salta {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        top: -20px;
+        left: 20px;
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }
+    
+}
+
+.navbar-toggler-icon {
+    background-image: var(--nave) !important;
+    width: 40px;
+}
+
+.navbar-toggler:focus {
+    border: 5px solid var(--first-color) !important;
+    animation: none;
+    box-shadow: none !important;
+}
+
+/* box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width); */
+
+.nav-link {
+    color: var(--title-color) !important;
+    font-family: 'Eurostile', sans-serif;
+    font-weight: 800 !important;
+    font-size: 40px;
+}
+
 
 /*=======================================*/

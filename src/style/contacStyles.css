@@ -1,0 +1,105 @@
+.form-group {
+    position: relative;
+    margin: 0.5rem 0.5rem;
+}
+
+.form-input {
+    width: 100%;
+    color: var(--text-color);
+    font-size: 18px;
+    padding: 0.6rem 0.8rem;
+    border: none;
+    outline: none;
+    border: 2px solid var(--first-color);
+    border-radius: 15px;
+}
+
+.form-input:focus {
+    border: 2px solid var(--secund-color);
+}
+
+.form-input:focus+.form-label {
+    color: var(--secund-color) !important;
+}
+
+.form-input:focus+.form-label,
+.form-input:not(:placeholder-shown)+.form-label {
+    transform: translateY(-25px) scale(0.6);
+    transform-origin: left top;
+    color: var(--first-color);
+    background: var(--body-color);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.form-label {
+    color: var(--text-color);
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    transition: transform 0.5s, color 0.3s;
+}
+
+.contac-btnsubmit {
+    display: flex;
+    color: var(--text-color);
+    border: none;
+    box-shadow: 0px 6px 1px 0px var(--secund-color);
+    border-bottom: 2px solid var(--first-color);
+    background: var(--first-color);
+    border-radius: 20px;
+    padding: 1px 1rem;
+    margin: 0 auto;
+}
+
+.contac-btnsubmit:active {
+    color: var(--text-color-hover);
+    transform: translateY(4px);
+    box-shadow: 0px 2px 1px 0px var(--secund-color);
+}
+
+.modal-content {
+    width: 300px !important;
+}
+
+.modal-body {
+    margin: 0 auto !important;
+}
+
+.modal-dialog-centered {
+    align-items: center;
+    justify-content: center !important;
+}
+
+.contac-myInfo {
+    display: flex;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.myInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.bxl-whatsapp{
+    color:#25D366
+}
+.bxl-linkedin{
+    color:#00A0DC
+}
+.bxl-github{
+    color: #171515;
+    
+}
+.bxs-envelope{
+    color: #0072C6;
+}
+
+.infotext{
+    font-size: 0.75em !important;
+}

@@ -28,7 +28,7 @@ const ContactMe = () => {
         <div>
             <h2 className='title' >
                 {/* <FormattedMessage id='id-aboutme-title1' defaultMessage='ABOUT' />{" "} */}
-                ABOUT
+                Contact
                 <span className='textSpan AboutMe'>
                     {/* <FormattedMessage id='id-aboutme-title2' defaultMessage='' /> */}
                     ME
@@ -36,22 +36,34 @@ const ContactMe = () => {
             </h2>
 
             <div className='contac-myInfo'>
-                <div>
-                    <i class='bx bxl-whatsapp' ></i>
-                    <h4>+593 997596531</h4>
-                </div>
-                <div>
-                    <i class='bx bxl-linkedin' ></i>
-                    <h4>https://www.linkedin.com/in/alex-patron1996/</h4>
-                </div>
-                <div>
-                    <i class='bx bxl-github' ></i>
-                    <h4>https://github.com/AlexPatron96</h4>
-                </div>
-                <div>
-                    <i class='bx bxs-envelope' ></i>
-                    <h4>alex.patron1996@hotmail.com</h4>
-                </div>
+                <Container>
+                    <Row>
+                        <Col sm={6}>
+                            <div className='myInfo' >
+                                <i className='bx bxl-whatsapp bx-lg' ></i>
+                                <h4   className='paragraph infotext'>+593 997596531</h4>
+                            </div>
+                        </Col>
+                        <Col sm={6}>
+                            <div className='myInfo'>
+                                <i className='bx bxl-linkedin bx-lg' ></i>
+                                <h4    className='paragraph infotext'>https://www.linkedin.com/in/alex-patron1996/</h4>
+                            </div>
+                        </Col>
+                        <Col sm={6}>
+                            <div className='myInfo'>
+                                <i className='bx bxl-github bx-lg' ></i>
+                                <h4  className='paragraph  infotext'>https://github.com/AlexPatron96</h4>
+                            </div>
+                        </Col>
+                        <Col sm={6}>
+                            <div className='myInfo'>
+                                <i className='bx bxs-envelope bx-lg' ></i>
+                                <h4 className='paragraph infotext'>alex.patron1996@hotmail.com</h4>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
 
 
