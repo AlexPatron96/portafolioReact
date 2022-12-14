@@ -2,6 +2,7 @@
     "id-logo1": "Boss",
     "id-logo2": "Desing",
     "id-nBar-init": "Home",
+    "id-nBar-about": "About me",
     "id-nBar-skill": "Skills",
     "id-nBar-portafolio": "Portafolio",
     "id-nBar-contact": "Contact Me",
@@ -57,5 +58,17 @@
     "id-project-pro6title":"Website Portfolio",
     "id-project-pro6desc": "My first portfolio with vanilla javascript, html and css. My first steps in web programming.",
     "id-project-tecnoUsed": "Used Technologies",
-    "id-project-proLink":"Project Links"
+    "id-project-proLink":"Project Links",
+    
+    
+    "id-contact-title1":"ABOUT",
+    "id-contact-title2":"ME",
+    "id-contact-nameContacted":"Name",
+    "id-contact-emailContacted":"Email",
+    "id-contact-subjetContacted":"Subject",
+    "id-contact-massageContact":"Message",
+    "id-contact-hireContact":"Hire Me",
+
+
+    "id-footer-downLoad" : "DownLoad CV"
 }

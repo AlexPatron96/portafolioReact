@@ -2,6 +2,7 @@
     "id-logo1":"Boss",
     "id-logo2":"Desing",
     "id-nBar-init":"Inicio",
+    "id-nBar-about": "Sobre mi",
     "id-nBar-skill":"Habilidades",
     "id-nBar-portafolio":"Portafolio",
     "id-nBar-contact":"Contáctame",
@@ -59,6 +60,18 @@
     "id-project-pro6title":"Portafolio Web",
     "id-project-pro6desc": "Mi primer portafolio con vainilla javascript, html y css. Mis primeros pasos en la programación web.",
     "id-project-tecnoUsed": "Tecnologías Usadas",
-    "id-project-proLink": "Enlaces del Proyecto"
+    "id-project-proLink": "Enlaces del Proyecto",
+
+     
+    "id-contact-title1":"SOBRE",
+    "id-contact-title2":"ME",
+    "id-contact-nameContacted":"Nombre",
+    "id-contact-emailContacted":"Correo",
+    "id-contact-subjetContacted":"Asunto",
+    "id-contact-massageContact":"Mensaje",
+    "id-contact-hireContact":"Contrátame",
+
+
+    "id-footer-downLoad" : "Descarga CV"
 
 }

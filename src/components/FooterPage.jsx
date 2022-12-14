@@ -3,6 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import cv from '../document/CV-ALEX-PATRON.pdf'
+import { FormattedMessage } from 'react-intl';
+
 const FooterPage = () => {
 
     return (
@@ -11,7 +13,10 @@ const FooterPage = () => {
                 <Row>
                     <Col sm={12}>
                         <a id='id-btncv' className='btn-downloadCv' href={cv} download="CV-ALEX-PATRON.pdf">
-                            <button className='contac-btnsubmit dl-contac'>DownLoad CV</button>
+                            <button className='contac-btnsubmit dl-contac'><FormattedMessage
+                                id='id-footer-downLoad'
+                                defaultMessage='loading'
+                            /></button>
                         </a>
                     </Col>
                     <Col sm={12} >

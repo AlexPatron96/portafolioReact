@@ -35,9 +35,10 @@ const BarNavegation = () => {
                         </Nav.Link>
                         <Nav.Link href="#id-aboutMe">
                             <FormattedMessage
-                                id='id-nBar-skill'
-                                defaultMessage='Skills'
-                            />
+                                id='id-nBar-about'
+                                defaultMessage='loading'
+                            /> 
+                    
                         </Nav.Link>
                         <Nav.Link href="#id-skills">
                             <FormattedMessage

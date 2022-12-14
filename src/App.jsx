@@ -120,7 +120,7 @@ function App() {
 
                 <div id='lenguage' className='lenguage'>
                     <button className='btnLenguage' onClick={() => setLanguage("es-ES")}>
-                        <img className='imgLenguage' src={images.spain} alt="" />
+                        <img className='imgLenguage' src={images.spain} alt="" /> 
                     </button>
                     <button className='btnLenguage' onClick={() => setLanguage("en-US")}>
                         <img className='imgLenguage' src={images.usa} alt="" />
