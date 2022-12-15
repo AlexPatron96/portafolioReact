@@ -118,7 +118,7 @@ function App() {
 
 
 
-                <div id='lenguage' className='lenguage'>
+                <div id='lenguage' className='lenguage activeGears'>
                     <button className='btnLenguage' onClick={() => setLanguage("es-ES")}>
                         <img className='imgLenguage' src={images.spain} alt="" /> 
                     </button>
