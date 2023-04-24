@@ -12,7 +12,8 @@ const FooterPage = () => {
             <Container>
                 <Row>
                     <Col sm={12}>
-                        <a id='id-btncv' className='btn-downloadCv' href={cv} download="CV-ALEX-PATRON.pdf">
+                        //<a id='id-btncv' className='btn-downloadCv' href={cv} download="CV-ALEX-PATRON.pdf">
+                         <a id='id-btncv' className='btn-downloadCv' href="https://drive.google.com/uc?export=download&id=1_R0jPflN_A7Yjn17PkvmEmmeH20jmZLq" >
                             <button className='contac-btnsubmit dl-contac'><FormattedMessage
                                 id='id-footer-downLoad'
                                 defaultMessage='loading'
