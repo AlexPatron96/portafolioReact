@@ -73,7 +73,8 @@ const Presentation = ({ render, locale }) => {
                                 <img className='imgbtnLink' src={images.lin} alt="" />
                             </a>
 
-                            <a id='id-btncv' className='btn-downloadCv' href={cv} download="CV-ALEX-PATRON.pdf">
+                            //<a id='id-btncv' className='btn-downloadCv' href={cv} download="CV-ALEX-PATRON.pdf">
+                            <a id='id-btncv' className='btn-downloadCv' href="https://drive.google.com/uc?export=download&id=1_R0jPflN_A7Yjn17PkvmEmmeH20jmZLq" download="CV-ALEX-PATRON.pdf">
                                 <img className='imgbtnLink' src={images.cvImg} alt="" />
                             </a>
 
